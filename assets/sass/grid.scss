@@ -1,0 +1,61 @@
+$gridSize: (1, 2, 3, 4, 5, 6, 7, 8, 9,10,11,12);
+
+@each $size in $gridSize {
+  .col-#{$size} {
+    width: calc(100%/12) * $size;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1
+}
+
+.flex-auto {
+  flex: auto
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-sp-b {
+  justify-content: space-between;
+}
+
+.flex-end {
+  justify-content: end;
+}
+
+.w-full {
+  width: 100%;
+}
+.w-s-full {
+  width: 100vw;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-s-full {
+  height: 100vh;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
